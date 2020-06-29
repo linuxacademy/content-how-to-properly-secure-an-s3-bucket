@@ -29,7 +29,7 @@
                 "s3:GetObject",
                 "s3:DeleteObject"
             ],
-            "Resource": "arn:aws:s3:::partyparrots-<RANDOM-STRING-PART-HERE>/${aws:username}/*",
+            "Resource": "arn:aws:s3:::partyparrots-<RANDOM-STRING-PART-HERE>/Engineering/${aws:username}/*",
             "Condition": {
                 "StringEquals": {
                     "aws:RequestedRegion": "us-east-1"
