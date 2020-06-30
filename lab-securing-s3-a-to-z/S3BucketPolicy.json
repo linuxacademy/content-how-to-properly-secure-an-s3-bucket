@@ -5,7 +5,7 @@
             "Effect": "Allow",
             "Action": "s3:ListBucket",
             "Principal": "*",
-            "Resource": "arn:aws:s3:::partyparrots-<RANDOM-STRING-PART-HERE>",
+            "Resource": "arn:aws:s3:::<YOUR-BUCKET-NAME-HERE>",
             "Condition": {
                 "StringEquals": {
                     "aws:RequestedRegion": "us-east-1"
@@ -29,7 +29,7 @@
                 "s3:GetObject",
                 "s3:DeleteObject"
             ],
-            "Resource": "arn:aws:s3:::partyparrots-<RANDOM-STRING-PART-HERE>/Engineering/${aws:username}/*",
+            "Resource": "arn:aws:s3:::<YOUR-BUCKET-NAME-HERE>/Engineering/${aws:username}/*",
             "Condition": {
                 "StringEquals": {
                     "aws:RequestedRegion": "us-east-1"
@@ -49,7 +49,7 @@
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:PutObject",
-            "Resource": "arn:aws:s3:::partyparrots-<RANDOM-STRING-PART-HERE>/*",
+            "Resource": "arn:aws:s3:::<YOUR-BUCKET-NAME-HERE>/*",
             "Condition": {
                 "StringEquals": {
                     "s3:x-amz-server-side-encryption": "AES256"
