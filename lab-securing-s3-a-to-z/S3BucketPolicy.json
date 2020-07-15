@@ -17,7 +17,7 @@
                     "aws:SourceIp": "x.x.x.x/32"
                 },
                 "DateLessThan": {
-                    "aws:CurrentTime": "2020-06-30T23:59:59Z"
+                    "aws:CurrentTime": "2021-10-30T23:59:59Z"
                 }
             }
         },
@@ -41,7 +41,7 @@
                     "aws:SourceIp": "x.x.x.x/32"
                 },
                 "DateLessThan": {
-                    "aws:CurrentTime": "2020-06-30T23:59:59Z"
+                    "aws:CurrentTime": "2021-10-30T23:59:59Z"
                 }
             }
         },
